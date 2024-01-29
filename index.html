@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decodificador de Texto</title>
-    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
@@ -25,34 +25,39 @@
         <img src="assets/img/Logo.svg" alt="Logo da Alura" class="header-img">
     </header>
 
-    <main>
+    <main class="content">
 
-        <textarea id="input" placeholder="Digite seu texto"></textarea>
+        <textarea id="input" placeholder="Digite seu texto" class="text"></textarea>
 
-        <aside>
-            <p>
-                <img src="assets/img/alertLogo.svg" alt="alert">
+        <aside class="opt">
+            <p class="alertText">
+                <img src="assets/img/alertLogo.svg" alt="alert" class="alertImg">
                 Apenas letras minúsculas e sem acento.
             </p>
-
-            <button class="btn">Criptografar</button>
-            <button class="btn-decrypt" onclick="">Desptografar</button>
+            
+            <button class="btnCrypt" onclick="">Criptografar</button>
+            <button class="btnDecrypt" onclick="">Desptografar</button>
+            
         </aside>
     </main>
 
     <section class="container-messages">
-        <img src="assets/img/logoLupa.svg" alt="logoLupa">
+        <!--<img src="assets/img/logoLupa.svg" alt="logoLupa" class="luppa disbled">
         <h1>Nenhuma mensagem encontrada</h1>
         <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
-        <div>
-            <p></p>
-            <button onclick="">Copiar</button>
+        --><div>
+            <p class="messagemEscondida">sfugiat blanditiis, iste repudiandae sit tenetur architecto expedita minima, quisquam quibusdam eum voluptatum id nisi totam provident maxime nemo repellendus aut?</p>
+            <buton onclick="" class="btn-copiar">Copiar</button>
         </div>
 
     </section>
 
-    <footer>
-        <p class="">feito por eu 0-0</p>
+    <footer class="final-pag">
+        <ul class="social-icons">
+            <li><a href="https://github.com/GabryelSantAna" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/gabryel-sant-ana-183632203/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+        <p class="final">Gabryel Sant'Ana &copy; 2024</p>
     </footer>
 
 </body>

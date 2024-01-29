@@ -1,3 +1,16 @@
+:root {
+    --primary-background: #f3f5fc;
+    --primary-btn-background: #0a3871;
+    --primary-btn-background-hover: #072b61;
+    --primary-btn-color: #ffff;
+    --primary-font-color: #0a3871;
+    --secondary-background: #ffff;
+    --secondary-btn-background: #eff1fa;
+    --secondary-btn-background-hover: #d8dfe8;
+    --secondary-btn-border-color: #0a3871;
+    --secondary-font-color: #495057;
+}
+
 * {
     box-sizing: border-box;
     font-family: Inter;
@@ -7,4 +20,172 @@
 
 *:focus {
     outline: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: var(--primary-background);
+}
+
+.header-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    height: 90vh;
+
+
+}
+
+.contente {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    height: 680px;
+    width: 680px;
+    justify-content: space-between;
+}
+
+.opt {}
+
+
+
+.text {
+    background-color: transparent;
+    resize: none;
+    border-style: none;
+    color: var(--primary-font-color);
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.btnCrypt {
+    flex-shrink: 0;
+    font-family: Inter;
+    cursor: pointer;
+    font-weight: 400;
+    border-radius: 25px;
+    padding: 24px;
+    width: 228px;
+    font-weight: 700;
+    border-color: var(--secondary-btn-border-color);
+    background-color: var(--primary-btn-background);
+    color: var(--primary-btn-color);
+}
+
+.btnCrypt:hover {
+    border-color: var(--secondary-btn-border-color);
+    background-color: var(--primary-btn-background-hover);
+    color: var(--primary-btn-color);
+}
+
+
+
+.btnDecrypt {
+    flex-shrink: 0;
+    font-family: Inter;
+    cursor: pointer;
+    font-weight: 400;
+    border-radius: 25px;
+    padding: 24px;
+    font-weight: 700;
+    width: 228px;
+    background-color: var(--secondary-btn-background);
+
+}
+
+.btnDecrypt:hover {
+    background-color: var(--secondary-btn-background-hover);
+}
+
+
+.container-messages {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--secondary-background);
+    border-radius: 4%;
+    width: 338px;
+    height: 500px;
+    gap: 10px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+
+}
+
+ .messagemEscondida {
+    display: flex;
+    align-items: start;
+    padding: 1px;
+    color: var(--secondary-font-color);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.btn-copiar {
+    display: flex;
+    font-family: Inter;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+   margin: 55px;
+    border-radius: 25px;
+    padding: 28px;
+    width: 228px;
+    font-weight: 700;
+    background-color: var(--secondary-background);
+
+}
+
+.btn-copiar:hover {
+    background-color: var(--secondary-btn-background-hover);
+}
+
+.final-pag {
+    background-color: var(--secondary-font-color);
+    bottom: 0px;
+    color: #f3f5fc;
+    font-weight: 700;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+}
+
+footer>a {
+    color: #f3f5fc;
+    text-decoration: none;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icons li {
+    margin: 0 10px;
+}
+
+.social-icons a {
+    color: #f3f5fc;
+    text-decoration: none;
+    font-size: 24px;
 }
