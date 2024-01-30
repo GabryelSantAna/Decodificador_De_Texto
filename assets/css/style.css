@@ -57,6 +57,7 @@ body {
 .text {
     background-color: transparent;
     resize: none;
+
     border-style: none;
     color: var(--primary-font-color);
     font-family: Inter;
@@ -64,6 +65,9 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
+    height: -webkit-fill-available;
+    width: 550px;
+    height: 243px;
     max-width: 100%;
     max-height: 100%;
 
@@ -124,9 +128,11 @@ body {
 
 }
 
- .messagemEscondida {
+.messagemEscondida {
     display: flex;
     align-items: start;
+    align-items: center;
+    justify-content: center;
     padding: 1px;
     color: var(--secondary-font-color);
     font-family: Inter;
@@ -143,7 +149,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 8px;
-   margin: 55px;
+    margin: 55px;
     border-radius: 25px;
     padding: 28px;
     width: 228px;
@@ -188,4 +194,180 @@ footer>a {
     color: #f3f5fc;
     text-decoration: none;
     font-size: 24px;
+}
+
+.enable {
+
+    display: none;
+}
+
+.disabled {
+    display: none;
+
+}
+
+@media screen (min-width: 600px) and (max-width: 1339px) {
+    
+    body {
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    footer {
+        height: 18%;
+        padding: 10px;
+        position: relative;
+    }
+
+    main {
+        align-items: center;
+        height: auto;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .text {
+        width: 88%;
+    }
+
+    .container-messages {
+        font-size: 20px;
+        height: auto;
+        padding: 20px;
+        width: 92%;
+    }
+
+    .alert-text {
+        margin-left: 24px;
+    }
+
+    .btn {
+        margin: 12px;
+        width: 45%;
+    }
+
+    .opt {
+        margin: 12px;
+        width: -webkit-fill-available;
+    }
+
+    .btn-copiar {
+        width: 576px;
+    }
+
+    .header-section {
+        align-items: start;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        width: 100%;
+    }
+
+    aside {
+        text-align: center;
+    }
+
+    .adtitle {
+        font-size: 20px;
+        line-height: 120%;
+        text-align: center;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+
+    .text::placeholder {
+        font-size: 20px;
+    }
+
+    .adtext {
+        font-size: 14px;
+    }
+
+    .luppa {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    main {
+        align-items: center;
+        height: auto;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .alert-text {
+        margin-left: 34px;
+    }
+
+    .btn {
+        margin: 12px;
+        width: 80%;
+    }
+
+    .opt{
+        margin: 12px;
+        width: -webkit-fill-available;
+    }
+
+    .container-messages {
+        font-size: 20px;
+        height: auto;
+        padding: 20px;
+        width: 70%;
+    }
+
+    .header-section {
+        align-items: start;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        width: 100%;
+    }
+
+    footer {
+        height: 9%;
+        padding: 5%;
+        position: absolute;
+    }
+
+    aside {
+        text-align: center;
+    }
+
+    .adtitle {
+        font-size: 20px;
+        line-height: 120%;
+        text-align: center;
+    }
+
+    .text {
+        font-size: 20px;
+        width: 75%;
+    }
+
+    .text::placeholder {
+        font-size: 20px;
+    }
+
+    .adtext {
+        font-size: 14px;
+    }
+
+    .luppa {
+        display: none;
+    }
 }

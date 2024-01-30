@@ -27,7 +27,7 @@
 
     <main class="content">
 
-        <textarea id="input" placeholder="Digite seu texto" class="text"></textarea>
+        <textarea placeholder="Digite seu texto" class="text"></textarea>
 
         <aside class="opt">
             <p class="alertText">
@@ -35,19 +35,19 @@
                 Apenas letras minúsculas e sem acento.
             </p>
             
-            <button class="btnCrypt" onclick="">Criptografar</button>
-            <button class="btnDecrypt" onclick="">Desptografar</button>
+            <button class="btn btnCrypt" onclick="encrypt()">Criptografar</button>
+            <button class="btn btnDecrypt" onclick="decrypt()">Desptografar</button>
             
         </aside>
     </main>
 
     <section class="container-messages">
-        <!--<img src="assets/img/logoLupa.svg" alt="logoLupa" class="luppa disbled">
-        <h1>Nenhuma mensagem encontrada</h1>
-        <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
-        --><div>
-            <p class="messagemEscondida">sfugiat blanditiis, iste repudiandae sit tenetur architecto expedita minima, quisquam quibusdam eum voluptatum id nisi totam provident maxime nemo repellendus aut?</p>
-            <buton onclick="" class="btn-copiar">Copiar</button>
+        <img src="assets/img/logoLupa.svg" alt="logoLupa" class="luppa disable">
+        <h1 class="adtitle disable">Nenhuma mensagem encontrada</h1>
+        <p class="adtext disable">Digite um texto que você deseja criptografar ou descriptografar.</p>
+        <div>
+            <p class="messagemEscondida"></p>
+            <buton onclick="copy()" class="btn btn-copiar enable" >Copiar</button>
         </div>
 
     </section>
